@@ -1,0 +1,200 @@
+ <!DOCTYPE html>
+ <html lang="em">
+ <head>
+   <meta charset="UTF-8">
+   <title>개인회원 가입</title>
+ </head>
+ <body>
+
+   <h1>개인회원 가입</h1> <!--body 바로밑에 들어가주기-->
+
+   <fieldset> <!--h1 없는 경우 body 바로밑에 들어가주기 닫는건 밑에서확인 -->
+     <legend>필수입력항목</legend> <!--fieldset 있으면 항상 얘가 같이들어가줘야한다-->
+
+     <form action="회원가입테이블양식.html" method="post"> <!--legend 밑에 써주기-->
+  <!--width : 화면에 % 값으로 보여주겠다 -->
+   <table border="1" width="100%">  <!-- width=가로 하이트:세로-->
+   <colgroup> <!-- 가로값에 % 값으로 보여주겠다 -->
+     <col width="10%" />
+     <col width="70%" />
+   </colgroup>
+
+
+   <tbody>
+     <tr>                                          <!--줄만들어주는태그-->
+       <th>
+         <label for="userid">회원아이디</label>
+       </th>
+       <td>
+         <input type="text" name="" id="userid" placeholder="아이디를입력하세요" />
+         <input type="button" name="" value="아이디중복조회" /> <!--버튼은 라벨씌울필요없다-->
+         <span>영문자 또는 숫자, 4~15자리</span>
+       </td>
+
+       <tr>
+         <th>
+           <label for="userPW">비밀번호</label>
+         </th>
+         <td>
+           <input type="password" name="" id="userPW" placeholder="비밀번호를입력하세요"/>
+           <span>변경 시에만 입력하십시오. 영문자 또는 숫자,4~12자리</span>
+         </td>
+       </tr>
+
+
+     <tr>
+       <th>
+         <label for="userPW2">비밀번호 확인</label>
+       </th>
+       <td>
+         <input type="password" name="" id="userPW2" placeholder="비밀번호를입력하세요"/>
+       </td>
+     </tr>
+
+     <tr>
+       <th>
+         <label for="username">회원성명</label>
+       </th>
+       <td>
+         <input type="text" name="" id="username" />
+         <span>한글 8자이내, 영문16자이내 입력</span>
+       </td>
+     </tr>
+
+     <tr>
+       <th>
+         <label for="resident">주민등록번호</label>
+         <label for="wnalsqjsgh"></label>
+       </th>
+       <td>
+         <input type="text" name="" id="resident" />
+         <span>-</span>
+         <input type="password" name="" id="wnalsqjsgh"/>
+       </td>
+     </tr>
+
+     <tr>
+       <th>
+         <label for="phonenumberd" >전화번호</label>
+         <label for="wjsqjs1" ></label>
+         <label for="wjsqjs2" ></label>
+
+       </th>
+
+       <td>
+         <select id="phonenumberd">
+           <option value="02">02</option>
+           <option value="010">010</option>
+           <option value="014">014</option>
+         </select>
+         <span>-</span>
+         <input type="text" name="" id="wjsqjs1" />
+         <span>-</span>
+         <input type="text" name="" id="wjsqjs2" />
+       </td>
+     </tr>
+
+     <tr>
+       <th>
+         <label for="phonenumberd2">핸드폰번호</label>
+         <label for="vhsenl1"></label>
+         <label for="vhsenl2"></label>
+       </th>
+       <td>
+         <select id="phonenumberd2">
+           <option value="010">010</option>
+           <option value="011">011</option>
+           <option value="014">014</option>
+           <option value="018">018</option>
+         </select>
+         <span>-</span>
+         <input type="text" name="" id="vhsenl1" />
+         <span>-</span>
+         <input type="text" name="" id="vhsenl2" />
+       </td>
+     </tr>
+
+     <tr>
+       <th>
+         <label for="address">주소</label>
+         <label for="wnth"></label>
+       </th>
+       <td>
+         <input type="text" name="" id="address" />
+         <span>-</span>
+         <input type="text" name="" id="wnth" />
+         <input type="button" value="우편번호검색" name="" /><br />
+       </td>
+     </tr>
+
+     <tr>
+       <th>
+         <label for="email">E-mail</label>
+         <label for="dlapdlf"></label>
+       </th>
+       <td>
+         <input type="text" name="" id="email" />
+         <span>@</span>
+         <select id="dlapdlf">
+           <option>hanbil.com</option>
+           <option>naver.com</option>
+           <option>nate.com</option>
+           <option>gmail.com</option>
+         </select>
+       </td>
+     </tr>
+
+     <tr> <!-- tr:줄 th,td:칸 -->
+       <th>
+         <label for="ckawhemail">참조E-mail</label>
+         <label for="ckawh"></label>
+       </th>
+       <td>
+         <input type="" name="" id="ckawhemail" />
+         <span>@<span>
+         <select id="ckawh">
+           <option>hanbil.com</option>
+           <option>naver.com</option>
+           <option>nate.com</option>
+           <option>gmail.com</option>
+         </select>
+         <p>
+           참조 E-Mail 이란?<br />
+           E-mail 고지를 받는 고객께서 고지를 정상적으로 받으실 수 없을 경우 업무의 공백을 막기위한<br />
+           서비스로 참조 E-mail을 등록해 놓으시면 매번 E-Mail 고지서에 등록하신 두개의 E-Mail로 고지해<br />
+           드립니다. <strong>단, 한국전력과 서울도시가스에만 해당됩니다.</strong>
+         </p>
+       </td>
+     </tr>
+
+     <tr>
+       <th>
+         <label for="yes">한빌 부가서비스 안내수신</label>
+       </th>
+       <td>
+         <label for="yes">예</label>
+         <input type="radio" name="zz" id="yes" />
+         <label for="no">아니요</label>
+         <input type="radio" name="zz" id="no" />
+       </td>
+     </tr>
+
+     <tr>
+       <th>
+         <label for="cncjsdls">추천인아이디</label>
+       </th>
+       <td>
+         <input type="text" name="" id="cncjsdls" placeholder="추천인을입력하세요" />
+       </td>
+     </tr>
+
+ </tbody>
+ </table>
+
+ <input type="submit" value="확인" /> <!--라벨안줘도됨-->
+ <input type="reset" value="재입력" /> <!--라벨안줘도됨-->
+
+ </form>
+ </fieldset>
+ </body>
+ </html>

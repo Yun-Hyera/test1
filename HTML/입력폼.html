@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>입력폼</title>
+</head>
+<body>
+
+  <!--한줄 입력한-->
+  <p>
+  <label for="userid">아이디</label>
+  <input type="text" id="userid" placeholder="아이디를 입력하세요" />
+  </p>
+
+<!--placeholder 은 html5 에서나와서 IE8,7,6은 지원안됨 허용하려면 자바스크립트이용 -->
+
+  <!--비밀번호-->
+  <p>
+  <label for="userPW">비밀번호</label>
+  <input type="password" id="userPW" placeholder="비밀번호를 입력하세요" />
+  </p>
+
+  <!--단일선택버튼 -->
+  <p>
+  <label for="radio">버튼</label>
+  <input type="radio" id="radio" />
+  </p>
+
+  <p>
+  <label for="man">남자</label>
+  <input type="radio" id="man" name="trans" />
+  <label for="woman">여자</label>
+  <input type="radio" id="woman" name="trans" />
+  </p>
+
+  <!--다중선택버튼-->
+  <p>
+  <label for="checkbox">체크박스</label>
+  <input type="checkbox" id="checkbox"/>
+  </p>
+
+  <p>
+  <label for="spots1">농구</label>
+  <input type="checkbox" id="spots1" />
+  <label for="spots2">야구</label>
+  <input type="checkbox" id="spots2" />
+  <label for="spots3">배구</label>
+  <input type="checkbox" id="spots3" />
+  </p>
+
+  <!--범용버튼-->
+  <p>
+  <label for="button">확인버튼</label>
+  <input type="button" id="button" value="확인" />
+  </p>
+
+  <p>
+  <label for="reset">초기화버튼</label>
+  <input type="reset" id=reset value="초기화" />
+  </p>
+
+  <!-- 확인후 전송해주는 버튼 -->
+  <p>
+  <label for="submit">전송버튼</label>
+  <input type="submit" id=submit value="전송" />
+  </p>
+
+  <!-- 파일버튼 -->
+  <p>
+  <label for="file">파일버튼</label>
+  <input type="file" id="file"/>
+  </p>
+
+  <input type="hidden" />
+
+  <!--이메일 버튼-->
+  <p>
+  <label for="email">이메일입력</label>
+  <select id="email">
+    <option>gmail.com</option>
+    <option>hotmail.com</option>
+    <option>nate.com</option>
+    <option>naver.com</option>
+  </select>
+  </p>
+
+  <!--내용입력박스 버틍-->
+  <p>
+  <label for="text">내용입력박스</label>
+  <textarea id="text" rows="8" cols="40" placeholder="내용을입력하세요"></textarea>
+  </p>
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>한국인터넷빌링</title>
+</head>
+<body>
+
+
+<h1>개인회원 가입</h1>
+
+<form action="한국인터넷빌링.html" method="post">
+
+<ul>
+  <li>
+  <p>
+    <label for="userid">회원 아이디</label>
+    <input type="text" name="" id="userid" placeholder="아이디를입력하세요" />
+    <input type="button" name="" value="아이디중복조회" />
+    <span>영문자 또는 숫자, 4~15자리</span>
+  </p>
+  </li>
+
+  <li>
+  <p>
+    <label for="userPW">비밀번호</label>
+    <input type="password" nane="" id="userPW"  placeholder="비밀번호를입력하세요" />
+    <span>변경 시에만 입력하십시오. 영문자 또는 숫자, 4~12자리</span>
+  </p>
+  </li>
+
+  <li>
+  <p>
+    <label for="userPWS">비밀번호 확인</label>
+    <input type="password" id="userPWS" placeholder="비밀번호를입력하세요" />
+  </p>
+  </li>
+
+  <li>
+  <p>
+    <label for="member">회원성명</label>
+    <input type="text" id="member" />
+    <span>한글 8자이내,영문 16자이내 입력</span>
+  </p>
+  </li>
+
+  <li>
+  <p>
+    <label for="Resident">주민등록번호</label>
+    <input type="text" id="Resident" />
+    <span>-</span>
+    <input type="password" />
+  </p>
+  </li>
+
+  <li>
+  <p>
+    <label for="phonenumber">전화번호</label>
+    <select id="phonenumber">
+      <option value="02">02</option>
+    </select>
+    <span>-</span>
+    <input type="text" />
+    <span>-</span>
+    <input type="text" />
+  </p>
+  </li>
+
+  <li>
+  <p>
+   <label for="phonenumberd">휴대폰번호</label>
+   <select id="phonenumberd">
+     <option value="010">010</option>
+   </select>
+   <span>-</span>
+   <input type="text" />
+   <span>-</span>
+   <input type="text" />
+  </p>
+  </li>
+
+  <li>
+  <p>
+     <label for="address"><input type="text" id="address" /></label>
+     <spa>-</spa>
+     <label for=""><input type="text" placeholder="" /></label>
+     <input type="button" value="우편번호 검색" /><br />
+     <input type="text" /> <br /> <!--br은 띄어주기 용이다 -->
+     <input type="text" /> <br />
+  </p>
+  </li>
+
+  <li>
+  <p>
+    <label for="email">E-mail</label>
+    <input type="text" id="email" />
+    <span>@</span>
+   <select>
+     <option>hanbil.ocm</option>
+   </select>
+  </p>
+  </li>
+
+  <li>
+  <p>
+    <label for="emaild">참조 E-mail</label>
+    <input type="text" id="emaild" />
+    <span>@</span>
+   <select>
+     <option>hanbil.ocm</option>
+   </select>
+ </p>
+ </li>
+
+<!--예시1 -->
+ <p>
+   참조 E-mail 이란?<br />
+   E-mail 고지를 받는 고객께서 고지를 정상적으로 받으실 수 없을 경우 업무의 공백을 막기위한<br />
+   서비스로 참조 E-mail를 등록해 놓으시면 매번 E-mail 고지서에 등록하신 두개의 E-mail로 고지해<br />
+   드립니다. <strong>단, 한국전력과 서울도시가스에만 해당됩니다.</strong>
+ </p>
+
+<!-- 여기서 스판을 넣지않은 이유는 글을쓰기 위에 p로 감싸주었기 때문이다. -->
+
+
+<!--예시2 -->
+ <!-- <p>
+   <span>참조 E-mail 이란? e-mail</span>
+   <label for="email">E-mail</label>
+   <input type="text" id="emaild" />
+   <span>고지를 받는 고객께서 고지를 정상적으로 받으실 수 없을 경우 업무의 공백을 막기위한
+   서비스로 참조 E-mail를 등록해 놓으시면 매번 E-mail 고지서에 등록하신 두개의 E-mail로 고지해
+   드립니다. <strong>단, 한국전력과 서울도시가스에만 해당됩니다.</strong></span>
+ </p> -->
+<!--하지만 p안 글씨에 label , input 등등.. 들어갈경우에는 따로 글씨들은 스판으로 감싸줘야하다 -->
+ <li>
+ <p>
+   <label for="yes">한빌 부가서비스 안내수신</label>
+   <label for="yes">예</label>
+   <input type="radio" id="yes" name="trans" />
+   <label for="no">아니요</label>
+   <input type="radio" id="no" name="trans" />
+ </p>
+ </li>
+
+ <li>
+ <p>
+   <label for="arecommender">추천인아이디</label>
+   <input type="text" id="arecommender" placeholder="추천인을입력하세요" />
+ </p>
+ </li>
+
+ <input type="submit" value="확인" />
+ <input type="reset" value="재입력" />
+
+</ul>
+</form>
+
+
+</body>
+</html>

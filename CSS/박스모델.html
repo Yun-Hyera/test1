@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>박스모델</title>
+<style>
+  *{margin:0;padding:0;
+  list-style: none;}
+
+  #box {height:100px;
+        border:1px red solid;}
+
+  #box{width:200px; /*컨텐츠만큼*/
+       margin-left:auto;
+       margin-right:auto;
+       border:1px #F00 solid;}
+
+  body{margin:0;} -
+
+  #menu{width:150px;
+        border:1px #F00 solid;}
+
+  #menu ul{border:1px #F00 solid;
+           width:auto; /*부모만큼*/
+           margin: 10px}
+
+  #children{height:200px;
+            background:#00F;
+            border:1px #F00 solid}
+</style>
+</head>
+<body>
+<div id="box"> <!--얜 그냥 블록요소 -->
+
+<!-- <div id="children"></div>
+</div>
+
+<div id="menu">
+  <ul>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+  </ul>
+</div>
+</body>
+</html> -->
+
+
+<!--
+  width:넓이 , min-width:최소넓이 , max-width:최대넓이
+
+  height = 높이 , min-height:최소넓이 , max-height:최소높이
+
+테두리와 다음 박스 영역 사이의 간격을 말하는것
+  margin , margin-top , margin-right , margin-bottom , margin-left
+바깥여백   바깥여백 위   바깥여백 오른쪽   바깥여백 밑    바깥여백 왼쪽
+
+
+ 내용과 테두리 사이의 간격
+padding  ,  padding-top    padding-right  padding-bottom   padding-left
+안쪽여백     안쪽여백 위    안쪽여백 오른쪽  안쪽여백 밑       안쪽여백 왼쪽
+
+border border-width border-style border-color
+테두리  테두리굵기   테두리 스타일  테두리 컬러
+
+
+
+ T     R    B   L      시계방향 TOP,Right,bottom,Left
+위  오른쪽 아래 왼쪽
+예) padding-안쪽여백 마진동일하나 마진은 바깥여백
+padding:10px; - 값을 한 번만 지정하면 위,아래,왼쪽,오른쪽 안 여백 모두 각 10px
+padding:10px 20px;(10 20) - 값을 두 번 지정하면 위,아래 10px, 왼쪽,오른쪽 20px
+padding:10px 20px 30px (20) - 값을 세 번만 지정하면 위 10px, 왼쪽,오른쪽 20px, 아래30px
+padding:10px 20px 30px 40px - 값을 네 번만 지정하면 위 10px, 오른쪽 20px, 아래30px, 왼쪽40px
+padding:15px 0 (15 0) - 값을 두 번 지정하면 위,아래 15px, 왼쪽,오른쪽 0px
+
+padding-top:10px - 위쪽 안 여백만 10px로 지정함.
+padding-right:10px - 오른쪽 안 여백만 10px로 지정함.
+padding-bottom:10px - 아래쪽 안 여백만 10px로 지정함.
+padding-left:10px - 오른쪽 안 여백만 10px로 지정함.
+
+
+
+-->

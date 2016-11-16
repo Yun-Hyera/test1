@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>margin</title>
+   <style>
+   /*자식간의 마진겹친현상*/
+   p {margin-bottom:20px; /*마진에 바텀에만 20px를 준거다*/
+     border: 1px #F00 solid;}
+
+   #abc{margin-bottom:50px;} /*abc를 스타일에 써주기*/
+
+   #ccc{margin-top:80px;}
+
+   /*부모간의 마진겹친현상*/
+
+ </style>
+ </head>
+
+ <body>
+   <p id="abc">딸기</p> <!--근데 내가 만약에 딸기한테만 마진 50줄거야 p에게 id주고 -->
+   <p>포도</p>
+   <p id="ccc">사과</p>
+   <p>바나나</p>
+
+<!-- dsfsdf -->
+
+ </body>
+ </html>
